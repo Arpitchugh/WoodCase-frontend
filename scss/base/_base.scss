@@ -1,0 +1,59 @@
+// Html tags
+// Body Tags
+// import all fonts
+// All variables are declared here
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+JP:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Noto Sans JP', sans-serif; font-weight: 300, 400
+// font-family: 'Ubuntu Mono'
+
+$background-color: #eeeeee;
+$primary-color: #f3efde;
+
+html {
+  font-size: 62.5%; // 10px
+  box-sizing: border-box;
+
+  @media screen and (max-width: 1400px) {
+    font-size: 50%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    font-size: 40%;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 30%;
+  }
+}
+
+body {
+  font-family: "lato";
+  margin: 0;
+  padding: 0;
+}
+.u-overflow {
+  overflow: hidden;
+}
+
+a,
+h1 {
+  text-decoration: none;
+  color: #f3efde;
+  font-weight: normal;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+::selection {
+  //change highlight color
+  background-color: #8d6b51;
+  color: #f3efde;
+}

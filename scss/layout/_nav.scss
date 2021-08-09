@@ -1,0 +1,118 @@
+/* --------------------------------- NavBar --------------------------------- */
+
+.nav {
+  background-color: rgba(226, 206, 187, 0.096);
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+
+  &__logo {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__logo-heading {
+    height: 7.3rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #f3efde;
+    font-weight: 600;
+    margin-left: 5rem;
+
+    @media screen and (max-width: 1712px) {
+      margin-left: 5rem;
+    }
+  }
+
+  &__list {
+    width: 125rem;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6rem;
+    padding-left: 0rem;
+
+    @media screen and (max-width: 1712px) {
+      margin-left: 0rem;
+    }
+
+    &-items {
+      margin: 3rem;
+      align-items: center;
+    }
+
+    &-link {
+      align-items: center;
+      font-size: 2.5rem;
+      padding: 0.3rem;
+    }
+  }
+
+  &__icons-list {
+    width: 30rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    @media screen and (max-width: 1712px) {
+      padding-left: 0rem;
+    }
+  }
+
+  &__icons-list-item {
+    margin: 2rem;
+    list-style-type: none;
+  }
+
+  &__icons {
+    height: 3.8rem;
+    width: 3.5rem;
+  }
+}
+
+/* ---------------------------- Animation of NAVBAR ---------------------------- */
+
+$animate: all 0.2s ease-in-out;
+
+.hover {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  transition: $animate;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0px;
+    height: 2px;
+    margin: 1px 0 0;
+    transition: $animate;
+    transition-duration: 0.75s;
+    opacity: 0;
+    background-color: #f3efde;
+  }
+  &.hover-1 {
+    &:before {
+      left: 0;
+    }
+  }
+}
+.example:hover {
+  cursor: pointer;
+  .hover {
+    &:before {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}

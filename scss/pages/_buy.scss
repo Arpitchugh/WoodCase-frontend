@@ -1,0 +1,86 @@
+.main {
+  padding: 0 8rem;
+}
+
+header {
+  margin: 3rem;
+}
+.heading-img1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu Mono";
+
+  &__content {
+    text-align: left !important;
+    margin-left: 15rem;
+    padding-right: 40rem;
+  }
+
+  &__heading {
+    font-size: 8rem;
+    color: #5a5a5a;
+    margin: 0rem;
+  }
+
+  &__price {
+    font-size: 2.5rem;
+    margin-bottom: 9rem;
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 2rem;
+  }
+
+  &__para {
+    font-size: 2rem;
+  }
+}
+
+.heading-img2 {
+  display: flex;
+  font-family: "Ubuntu Mono";
+  margin-bottom: 8rem;
+
+  &__content {
+    text-align: left !important;
+    margin-left: 15rem;
+    padding-right: 40rem;
+    color: #000 !important;
+  }
+  
+
+  &__description {
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+  }
+  h3 {
+    font-weight: 300;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+
+  }
+  a {
+    color: #000;
+    font-weight: 200;
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+.button {
+  border: solid 2px rgba(0, 0, 0, 0.534);
+  display: flex;
+  align-items: center;
+  margin: 3rem 0rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  width: 25rem;
+
+  img {
+    height: 6rem;
+    width: 6rem;
+  }
+}
